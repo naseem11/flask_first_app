@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h2>The Students Page Is Now A Template</h2>
+
+
+<ul>
+    {% for student in students %}
+        <li><a href="/students/{{ student.id }}">{{ student.name }} - ({{ student.age }})</a></li>
+    {% endfor %}
+</ul>
+
+<hr>
+
+<a href="students/add">Add</a>
+</body>
+</html>
